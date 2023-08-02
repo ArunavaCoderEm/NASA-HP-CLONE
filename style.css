@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Inconsolata:wght@200&family=Oswald:wght@500&family=Shantell+Sans:wght@500&family=Teko:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Inconsolata:wght@200&family=Oswald:wght@500&display=swap');
+
+* {
+    margin: 0 0;
+    border: 0 0;
+    padding: 0 0;
+}
+
+body {
+    background:rgb(14, 14, 14);
+    height: 200vh;
+}
+
+#logo {
+    background: transparent;
+    height: 100px;
+    width: 200px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.borderright {
+    border-right: 2px solid rgb(106, 105, 105);
+    height: 1.3cm;
+    margin-top: 17px;
+}
+
+.topnavfixed {
+    position: fixed;
+    background: url("./images/navbg.jpg");
+    height: 19vh;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 13vw;
+}
+
+nav ul li{
+    text-decoration: none;
+    padding: 25px 0px;
+}
+
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    margin: 2vw 2.5vh;
+    font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: -0.1ch;
+}
+
+#last {
+    border: none;
+}
+
+form {
+    color: #555;
+    display: flex;
+    padding: 25px;
+    margin-left: 0.3cm;
+}
+
+input[type="search"] {
+    border: none;
+    width: 3.35cm;
+    height: 1cm;
+    background: rgb(54, 53, 53);
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    color: white;
+}
+  
+input[type="search"]::placeholder {
+    color: #bbb;
+}
+
+#icon {
+    background: rgb(54, 53, 53);
+    margin-top: 9px;
+    padding: 8.5px 10px;
+    margin: 0.8px 0px;
+    cursor: pointer;
+} 
+
+.undernav {
+    padding-top: 5px;
+}
+
+.undernav ul {
+    display: flex;
+    margin-left: 7cm;
+    margin-top: -30px;
+}
+
+.undernav ul li {
+    list-style: none;
+    padding: 7px 0px;
+    background: rgb(94, 94, 94);
+}
+
+.undernav ul li a {
+    text-align: center;
+    align-items: center;
+    padding: 0 15px;
+    text-decoration: none;
+    letter-spacing: -0.1ch;
+    border-right: 2px solid rgb(158, 155, 155);
+    color: white;
+}
+
+.undermis {
+    position: absolute;
+    background: rgb(2, 67, 133);
+    height: 14cm;
+    width: 7.5cm;
+    z-index: 1;
+    display: none;
+    transition: 0.8s;
+}
+
+.galdrop {
+    position: absolute;
+    background-color: rgb(2, 67, 133);
+    display: none;
+    width: 6.5cm;
+    height: 7cm;
+    z-index: 1;
+}
+
+.foldrop {
+    position: absolute;
+    background-color: rgb(2, 67, 133);
+    display: none;
+    width: 6.5cm;
+    height: 11cm;
+    z-index: 1;    
+}
+
+.dowdrop {
+    position: absolute;
+    background-color: rgb(2, 67, 133);
+    display: none;
+    width: 6.5cm;
+    height:7cm;
+    z-index: 1;    
+}
+
+.abodrop {
+    position: absolute;
+    background-color: rgb(2, 67, 133);
+    display: none;
+    width: 6.5cm;
+    height:12cm;
+    z-index: 1;    
+}
+
+.auddrop {
+    position: absolute;
+    background-color: rgb(2, 67, 133);
+    display: none;
+    width: 6.5cm;
+    height:10cm;
+    z-index: 1;    
+}
+
+.auddrop a {
+    margin: 8px 15px;
+}
+
+.abodrop a {
+    margin: 8px 15px;
+}
+
+.dowdrop a {
+    margin: 8px 15px;
+}
+
+.galdrop a {
+    margin: 8px 15px;
+}
+
+.foldrop a {
+    margin: 8px 15px;
+}
+
+#firstmis {
+    margin-top: 35px;
+}
+
+.undermis a {
+    margin: 8px 15px;
+}
+
+hr {
+    color: white;
+}
+
+.undernav ul li:hover {
+    background:gray;
+}
+
+nav ul li:hover {
+    background: rgb(2, 67, 133);
+}
+
+nav ul li:hover .undermis {
+    display: flex;
+    flex-direction: column;    
+}
+
+nav ul li:hover .galdrop {
+    display: flex;
+    flex-direction: column;    
+}
+
+nav ul li:hover .abodrop {
+    display: flex;
+    flex-direction: column;    
+}
+
+nav ul li:hover .foldrop {
+    display: flex;
+    flex-direction: column;    
+}
+
+nav ul li:hover .dowdrop {
+    display: flex;
+    flex-direction: column;    
+}
+
+nav ul li:hover .auddrop {
+    display: flex;
+    flex-direction: column;    
+}
+
+.undermis a:hover {
+    background: rgb(2, 39, 77);
+}
+
+.auddrop a:hover {
+    background: rgb(2, 39, 77);
+}
+
+.foldrop a:hover {
+    background: rgb(2, 39, 77);
+}
+
+.galdrop a:hover {
+    background: rgb(2, 39, 77);
+}
+
+.dowdrop a:hover {
+    background: rgb(2, 39, 77);
+}
+
+.abodrop a:hover {
+    background: rgb(2, 39, 77);
+}
